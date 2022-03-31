@@ -9,6 +9,8 @@
     --alternate-background-color: #FFFFFF;
     --alternate-color: #495057;
     --opacity-prim-second: 0.5; 
+    --coursor-disabled: not-allowed;
+    --coursor-pointer: pointer; 
 }
 
 /* button block */
@@ -37,6 +39,7 @@
     background-color: var(--primary-background-color);
     color: var(--primary-color);
     border: none;
+    cursor: var(--coursor-pointer);
 }
 
 .button_primary:hover {
@@ -45,6 +48,7 @@
 
 .button_primary-disabled {
     opacity: var(--opacity-prim-second);
+    cursor: var(--coursor-disabled);
 }
 
 /* secondary block */
@@ -53,6 +57,7 @@
     background-color: var(--secondary-background-color);
     color: var(--secondary-color);
     border: none;
+    cursor: var(--coursor-pointer);
 }
 
 .button_secondary:hover {
@@ -61,6 +66,7 @@
 
 .button_secondary-disabled {
     opacity: var(--opacity-prim-second);
+    cursor: var(--coursor-disabled);
 }
 
 /* alternate block */
@@ -69,7 +75,8 @@
     background-color: var(--alternate-background-color);
     color: var(--alternate-color);
     box-sizing: border-box;
-    border: 1px solid #ACB5BD
+    border: 1px solid #ACB5BD;
+    cursor: var(--coursor-pointer);
 }
 
 .button_alternate:hover {
@@ -79,6 +86,7 @@
 
 .button_alternate-disabled {
     color: #ACB5BD;
+    cursor: var(--coursor-disabled);
 }
 
 
