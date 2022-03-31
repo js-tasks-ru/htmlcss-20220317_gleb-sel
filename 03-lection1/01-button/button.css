@@ -1,70 +1,85 @@
-/* Стилизация кнопки */
+
+:root {
+    --primary-background-color: #4263EB;
+    --primary-color: #FFFFFF;
+    --primary-hover: #2342C0;
+    --secondary-background-color:  #7048E8;
+    --secondary-color: #FFFFFF;
+    --secondary-hover: #5028C6;
+    --alternate-background-color: #FFFFFF;
+    --alternate-color: #495057;
+    --opacity-prim-second: 0.5; 
+}
+
+/* button block */
+
 .button {
-    width: 189px;
     height: 48px;
+    width: 189px;
     border-radius: 8px;
-    border-width: 0px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: center;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
-    cursor: pointer;
+    /* display: inline-block; */
+
 }
 
-.button-primary_disabled:active, .button-primary {
-    background-color: #4263EB;
+.button__text {
+    padding: 15px;
 }
 
-.button-primary:hover {
-    background-color: #2342C0;
+/* primary block */
+
+.button_primary, .button_primary-disabled {
+    background-color: var(--primary-background-color);
+    color: var(--primary-color);
+    border: none;
 }
 
-.button-primary_disabled:disabled, .button-secondary_disabled:disabled {
-    cursor: default;
-    opacity: 0.5;
+.button_primary:hover {
+    background-color: var(--primary-hover);
 }
 
-.button-secondary_disabled:active, .button-secondary {
-    background-color:  #7048E8;
+.button_primary-disabled {
+    opacity: var(--opacity-prim-second);
 }
 
-.button-secondary:hover {
-    background-color: #5028C6;
+/* secondary block */
+
+.button_secondary, .button_secondary-disabled {
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-color);
+    border: none;
 }
 
-.button-primary__name, .button-secondary__name, .button-disabled__name {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500, 'Medium';
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #FFFFFF;
+.button_secondary:hover {
+    background-color: var(--secondary-hover);
 }
 
-.button-alternate_disabled:disabled {
-    background-color: white;
-    color: red;
+.button_secondary-disabled {
+    opacity: var(--opacity-prim-second);
 }
 
-.button-alternate, .button-alternate_disabled:active {
-    background-color: white;
-    border: 1px solid #ACB5BD;
+/* alternate block */
+
+.button_alternate, .button_alternate-disabled {
+    background-color: var(--alternate-background-color);
+    color: var(--alternate-color);
+    box-sizing: border-box;
+    border: 1px solid #ACB5BD
 }
 
-.button-alternate__name {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500, 'Medium';
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #495057
-}
-
-.button-alternate:hover {
+.button_alternate:hover {
     border: 1px solid #212429;
+    box-sizing: border-box;
 }
 
-
-
+.button_alternate-disabled {
+    color: #ACB5BD;
+}
 
 
 
