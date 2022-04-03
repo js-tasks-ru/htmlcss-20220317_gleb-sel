@@ -1,23 +1,9 @@
 
-:root {
-    --primary-background-color: #4263EB;
-    --primary-color: #FFFFFF;
-    --primary-hover: #2342C0;
-    --secondary-background-color:  #7048E8;
-    --secondary-color: #FFFFFF;
-    --secondary-hover: #5028C6;
-    --alternate-background-color: #FFFFFF;
-    --alternate-color: #495057;
-    --opacity-prim-second: 0.5; 
-    --coursor-disabled: not-allowed;
-    --coursor-pointer: pointer; 
-}
 
 /* button block */
 
 .button {
     height: 48px;
-    width: 189px;
     border-radius: 8px;
     font-family: Roboto;
     font-size: 16px;
@@ -25,13 +11,11 @@
     line-height: 19px;
     text-align: center;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+    padding: 15px 15px 14px;
     /* display: inline-block; */
 
 }
 
-.button__text {
-    padding: 15px;
-}
 
 /* primary block */
 
