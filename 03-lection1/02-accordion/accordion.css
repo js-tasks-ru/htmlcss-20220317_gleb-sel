@@ -30,7 +30,7 @@
 }
 
 details[open] .accordion__content { 
-    padding: 0 49px 12px 0;
+    padding: 0 49px 8px 0;
 }
 
 .accordion__item:last-child {
