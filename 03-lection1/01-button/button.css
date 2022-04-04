@@ -16,10 +16,14 @@
 
 }
 
+.button:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+}
 
 /* primary block */
 
-.button_primary, .button_primary-disabled {
+.button_primary {
     background-color: var(--primary-background-color);
     color: var(--primary-color);
     border: none;
@@ -30,14 +34,11 @@
     background-color: var(--primary-hover);
 }
 
-.button_primary-disabled {
-    opacity: var(--opacity-prim-second);
-    cursor: var(--coursor-disabled);
-}
+
 
 /* secondary block */
 
-.button_secondary, .button_secondary-disabled {
+.button_secondary  {
     background-color: var(--secondary-background-color);
     color: var(--secondary-color);
     border: none;
@@ -48,14 +49,10 @@
     background-color: var(--secondary-hover);
 }
 
-.button_secondary-disabled {
-    opacity: var(--opacity-prim-second);
-    cursor: var(--coursor-disabled);
-}
 
 /* alternate block */
 
-.button_alternate, .button_alternate-disabled {
+.button_alternate {
     background-color: var(--alternate-background-color);
     color: var(--alternate-color);
     box-sizing: border-box;
@@ -65,13 +62,8 @@
 
 .button_alternate:hover {
     border: 1px solid #212429;
-    box-sizing: border-box;
 }
 
-.button_alternate-disabled {
-    color: #ACB5BD;
-    cursor: var(--coursor-disabled);
-}
 
 
 
