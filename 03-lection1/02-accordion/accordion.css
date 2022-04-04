@@ -1,7 +1,6 @@
 /* Стилизация аккордеона */
 
 .accordion {
-    width: 730px;
     background-color: #FFFFFF;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -11,10 +10,12 @@
 
 }
 
-
-
 .accordion__summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
     display: none;
+}
+
+details > summary {
+    list-style: none;
 }
 
 .accordion__item {
@@ -29,7 +30,7 @@
     margin: 16px 0 0 0;
 }
 
-details[open] .accordion__content { 
+.accordion__details[open] .accordion__content { 
     padding: 0 49px 8px 0;
 }
 
