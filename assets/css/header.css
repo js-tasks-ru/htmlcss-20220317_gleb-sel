@@ -1,0 +1,14 @@
+.header {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 64px;
+    text-align: left;
+    
+}
+
+
+.header__title {
+    padding: 96px 0 77px 160px;
+}
+

@@ -1,4 +1,9 @@
 @import '../fonts/fonts.css';
+@import './page.css';
+@import './header.css';
+@import './preview.css';
+@import './footer.css';
+@import './container.css';
 
 :root {
     --white: #ffffff;
@@ -19,6 +24,6 @@
     --secondary: var(--purple);
 }
 
-* {
-    font-family: 'Roboto', sans-serif;
-}
+/* * {
+    font-family: 'Inter', sans-serif;
+} */
