@@ -1,9 +1,9 @@
-@import '../fonts/fonts.css';
-@import './page.css';
-@import './header.css';
-@import './preview.css';
-@import './footer.css';
-@import './container.css';
+@import '/assets/fonts/fonts.css';
+@import '../page/page.css';
+@import '../header/header.css';
+@import '../preview/preview.css';
+@import '../footer/footer.css';
+@import '../container/container.css';
 
 :root {
     --white: #ffffff;
