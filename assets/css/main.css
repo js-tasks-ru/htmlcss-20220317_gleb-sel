@@ -57,6 +57,7 @@ h1 {
 }
 
 .preview__cards {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
