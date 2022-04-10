@@ -53,6 +53,7 @@ h1 {
     margin-right: 5px;
     padding-top: 67px;
     display: flex;
+    width: 100%;
 }
 
 .preview__cards {
