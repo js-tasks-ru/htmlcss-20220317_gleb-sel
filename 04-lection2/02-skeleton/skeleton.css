@@ -1,0 +1,59 @@
+.skeleton {
+    width: 579px;
+    height: 192px;
+    border-radius: 8px;
+    border: 1px solid #acb5bd;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-flow: wrap column;
+}
+
+.skeleton > .container > div {
+    display: flex;
+}
+
+.container {
+    margin: 24px 40px 32px 24px;
+}
+
+.skeleton-hidden .brief__info__content, .skeleton-hidden .info__detailed {
+    height: 20px;
+    background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+}
+
+.skeleton__header {
+    flex-flow: row wrap;
+    margin-bottom: 24px;
+}
+
+.header__avatar {
+    width: 64px;
+    height: 64px;
+    background: #DDE2E5;
+    margin-right: 16px;
+    border-radius: 50%;
+}
+
+.header__brief-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.brief__info__content {
+    width: 100%;
+}
+
+.skeleton__info {
+    flex-flow: column wrap;
+    width: 100%;
+    gap: 8px;
+}
+
+.info__detailed {
+    width: 100%;
+}
+
+
+
