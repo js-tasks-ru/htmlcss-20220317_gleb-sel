@@ -12,6 +12,8 @@
     text-align: center;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
     padding: 15px 15px 14px;
+    border: none;
+    cursor: var(--coursor-pointer);
     /* display: inline-block; */
 
 }
@@ -26,8 +28,6 @@
 .button_primary {
     background-color: var(--primary-background-color);
     color: var(--primary-color);
-    border: none;
-    cursor: var(--coursor-pointer);
 }
 
 .button_primary:hover {
@@ -41,8 +41,6 @@
 .button_secondary  {
     background-color: var(--secondary-background-color);
     color: var(--secondary-color);
-    border: none;
-    cursor: var(--coursor-pointer);
 }
 
 .button_secondary:hover {
@@ -57,7 +55,6 @@
     color: var(--alternate-color);
     box-sizing: border-box;
     border: 1px solid #ACB5BD;
-    cursor: var(--coursor-pointer);
 }
 
 .button_alternate:hover {
