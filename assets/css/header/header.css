@@ -9,6 +9,7 @@
 
 
 .header__title {
-    padding: 96px 0 77px 160px;
+    padding-top: 96px;
+    padding-bottom: 77px;
 }
 
