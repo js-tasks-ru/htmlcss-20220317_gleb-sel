@@ -1,9 +1,7 @@
-* {margin: 0;}
+
 
 
 .histogram {
-    width: 354px;
-    height: 185px;
     border-radius: 8px;
     border: 1px solid #ACB5BD;
     box-sizing: border-box;
@@ -15,9 +13,7 @@
     font-weight: 400;
 }
 
-.container {
-    padding: 0 24px 24px;
-}
+
 
 .histogram__header {
     display: flex;
@@ -63,7 +59,7 @@
 }
 
 .histogram__column {
-    width: 9px;
+    flex-basis: 9px;
     background-color: #4263EB;
     flex-grow: 1;
 }
