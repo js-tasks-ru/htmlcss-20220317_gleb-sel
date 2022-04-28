@@ -1,5 +1,7 @@
 @import '../fonts/fonts.css';
 
+
+
 :root {
     --white: #ffffff;
     --black: #212429;
@@ -18,7 +20,7 @@
     --primary: var(--blue);
     --secondary: var(--purple);
 }
-
+/* 
 * {
     font-family: 'Roboto', sans-serif;
-}
+} */
