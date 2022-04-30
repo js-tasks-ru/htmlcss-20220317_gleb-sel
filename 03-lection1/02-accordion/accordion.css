@@ -21,7 +21,7 @@
 
 .accordion__item {
     margin-bottom: 8px;
-    border: 1px solid #ACB5BD;
+    border: 1px solid var(--grey-3);
     box-sizing: border-box;
     padding: 24px 0 24px 32px;
     border-radius: 8px;
