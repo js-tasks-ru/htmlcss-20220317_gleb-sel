@@ -1,11 +1,9 @@
 
-
-
 .histogram {
     border-radius: 8px;
-    border: 1px solid #ACB5BD;
+    border: 1px solid var(--grey-3);
     box-sizing: border-box;
-    background-color: #ffffff;
+    background-color:var(--white);
     display: flex;
     flex-flow: column wrap;
     font-family: 'Inter';
@@ -27,13 +25,13 @@
 .header__tile {
     margin-top: 16px;
     margin-bottom: 6px;
-    color: #212429;
+    color: var(--black);
     opacity: 0.8;
 }
 
 .header__link {
    margin-top: 19px;
-   color: #4263EB;
+   color: var(--blue);
    text-decoration: none;
 }
 
@@ -45,7 +43,7 @@
 .histogram__values {
     font-size: 20px;
     line-height: 26px;
-    color: #212429;
+    color: var(--black);
     margin-bottom: 39px;
 }
 
@@ -60,7 +58,7 @@
 
 .histogram__column {
     flex-basis: 9px;
-    background-color: #4263EB;
+    background-color: var(--blue);
     flex-grow: 1;
 }
 
