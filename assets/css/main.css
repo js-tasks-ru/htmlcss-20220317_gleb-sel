@@ -22,62 +22,122 @@
 /* font-family: 'Inter', sans-serif; */
 
 
-.page {
-    min-width: 1440px;
-    display: flex;
-    flex-flow: wrap column;
-    align-content: space-between;
-    justify-content: center;
-    font-family: 'Inter';
-    font-style: normal;
+.body {
+    width: 100%;
 }
 
-.container {
-    margin-left: 160px;
-    margin-right: 160px;
-}
-
-h1 {
+h1, h2 {
     margin: 0;
 }
 
+.page {
+    /* min-width: 1440px; */
+    display: flex;
+    flex-flow: column wrap;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
 .header {
     text-align: left;
+    flex-grow: 0;
+
     padding-top: 96px;
-    padding-bottom: 77px;
+}
+
+.header__title {
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 50px;
+line-height: 64px;
+
+color: var(--black)
+
+
 }
 
 
 .preview {
-    margin-left: 5px;
-    margin-right: 5px;
-    padding-top: 67px;
-    display: flex;
-    width: 100%;
+    flex-grow: 1;
+    padding-top: 68px;
+    padding-bottom: 204px;
 }
 
 .preview__cards {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-flow: row wrap;
     gap: 30px;
+    width: 100%;
 }
 
-.cards__card {
+.preview__card {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-bottom: 30px;
     box-sizing: border-box;
+    height: 367px;
+    /* заполнить пустосту */
     width: calc((100 / 3) * 1% - 30px);
-    height: 300px;
-    background: rebeccapurple;
+
+    background: var(--white);
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
     border-radius: 12px;
-    border: 1px solid black;
+    border: none;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    color: var(--black);
+
+}
+
+.preview__image {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.preview__title {
+    flex-grow: 0;
 }
 
 
 
+.footer {
+    flex-grow: 0;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    padding-top: 71px;
+    padding-bottom: 136px;
 
+    font-family: 'Inter';
+    font-style: normal;
+    color: var(--black);
+}
 
+.footer__title {
 
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 48px;
+    color: var(--black);
+    margin-bottom: 32px;
+}
 
+.footer__description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+}
