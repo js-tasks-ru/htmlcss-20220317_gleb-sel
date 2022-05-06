@@ -44,15 +44,15 @@
     background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%); 
 }
 
-.skeleton_size_s {
+.skeleton__content_size_s {
     width: 20%;
 }
 
-.skeleton_size_m {
+.skeleton__content_size_m {
     width: 50%;
 }
 
-.skeleton_size_l {
+.skeleton__content_size_l {
     width: 100%;
 }
 
