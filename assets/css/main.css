@@ -22,6 +22,18 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+
+    --primary-background-color: #4263EB;
+    --primary-color: #FFFFFF;
+    --primary-hover: #2342C0;
+    --secondary-background-color:  #7048E8;
+    --secondary-color: #FFFFFF;
+    --secondary-hover: #5028C6;
+    --alternate-background-color: #FFFFFF;
+    --alternate-color: #495057;
+    --opacity-prim-second: 0.5; 
+    --coursor-pointer: pointer; 
 }
 
 /* font-family: 'Inter', sans-serif; */
