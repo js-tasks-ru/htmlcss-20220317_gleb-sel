@@ -1,10 +1,9 @@
 .calendar {
-    width: 100%;
     max-width: 300px;
 
-    background: #FFFFFF;
+    background: var(--white);
 
-    border: 1px solid #ACB5BD;
+    border: 1px solid var(--grey-3);
     box-sizing: border-box;
     border-radius: 8px;
 
@@ -19,7 +18,7 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
-    color: #334D6E;
+    color: var(--blue-2);
     margin-bottom: 14px
 }
 
@@ -40,7 +39,7 @@
 }
 
 .calendar__item {
-    color: #334D6E;
+    color: var(--blue-2);
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 400;
@@ -54,15 +53,15 @@
 .calendar__item_day {
     font-family: 'Inter';
     font-size: 14px;
-    color: #90A0B7;
+    color: var(--grey-5);
 }
 
 .calendar__item_pinned-blue {
-    background-color: #4263EB;
-    color: #FFFFFF;
+    background-color: var(--blue-3);
+    color: var(--white);
 }
 
 .calendar__item_pinned-opacity {
-    background: #A0B1F5;
+    background: var(--blue-4);
     opacity: 0.2;
 }
