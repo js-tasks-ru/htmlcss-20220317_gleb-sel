@@ -23,7 +23,7 @@
     margin-bottom: 8px;
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
-    padding: 24px 0 24px 32px;
+    padding: 24px 49px 24px 32px;
     border-radius: 8px;
 }
 
@@ -32,7 +32,7 @@
 }
 
 .accordion__details[open] .accordion__content { 
-    padding: 0 49px 8px 0;
+    padding-bottom: 8px;
 }
 
 .accordion__item:last-child {
