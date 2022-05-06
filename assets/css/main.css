@@ -1,4 +1,5 @@
 @import '../fonts/fonts.css';
+@import '/03-lection1/01-button/button.css';
 
 :root {
     --white: #ffffff;
@@ -6,11 +7,16 @@
     --pink: #F784AD;
     --purple: #7048E8;
     --blue: #374FC7;
+    --blue-2: #334D6E;
+    --blue-3: #4263EB;
+    --blue-4: #A0B1F5;
     --red: #F03D3E;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
     --grey-3: #ACB5BD;
     --grey-4: #495057;
+    --grey-5: #90A0B7;
+
 
     --error: var(--red);
     --success: var(--blue);

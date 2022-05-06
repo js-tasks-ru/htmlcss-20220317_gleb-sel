@@ -1,69 +1,61 @@
-
-
-
-.modal {
+.button_position-centre {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
-
-.button {
-
-    background: #4263EB;
-    border-radius: 8px;
-
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    display: inline-block;
-    padding: 14px 15px;
-    color: #FFFFFF;
-    cursor: pointer;
-
 
 }
+
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(196, 196, 196, 0.5);
+    /* display: none; */
+}
+
 
 .modal__poppup {
     width: 100%;
     max-width: 508px;
-    background: #C4C4C4;
-    opacity: 0.5;
-    padding: 47px 40px;
-    display: none;
-}
 
-.modal__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-    background: #FFFFFF;
+    background-color: var(--white);
     border-radius: 8px;
     border: none;
+    padding: 30px 40px;
+    box-sizing: border-box;
 
-    padding: 16px 16px 40px 40px;
-
-}
-
-.modal__content {
-    padding: 6px 24px 0 0;
 }
 
 .modal__close {
-    display: flex;
-    justify-content: flex-end;
+    cursor: pointer;
+    border: none;
+    background-color: var(--white);
+    padding: 0;
+
+    position: absolute;
+    top: 15px;
+    right: 15px;
 }
 
-.modal__close svg {
-    cursor: pointer;
+.modal__content {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 14px;
+    font-family: 'Inter';
+    font-style: normal;
 }
+
 
 .modal__title {
     margin: 0;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
@@ -71,15 +63,10 @@
     align-items: flex-end;
     color: #334D6E;
 
-
-    margin-bottom: 14px;
-
 }
 
 .modal__info {
 
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
