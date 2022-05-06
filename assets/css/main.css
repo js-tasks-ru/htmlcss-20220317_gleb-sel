@@ -1,9 +1,9 @@
 @import '/assets/fonts/fonts.css';
-@import '../page/page.css';
-@import '../header/header.css';
-@import '../preview/preview.css';
-@import '../footer/footer.css';
-@import '../container/container.css';
+@import '../css/page/page.css';
+@import '../css/header/header.css';
+@import '../css/preview/preview.css';
+@import '../css/footer/footer.css';
+@import '../css/container/container.css';
 
 :root {
     --white: #ffffff;
@@ -36,3 +36,6 @@
     --coursor-pointer: pointer; 
 }
 
+body {
+    width: 100%;
+}
