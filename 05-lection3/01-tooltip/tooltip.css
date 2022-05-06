@@ -1,11 +1,6 @@
 .tooltip {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    height: 24px;
-    width: 24px;
+    position: relative;
+    display: inline-block;
 }
 
 .tooltip:hover>.tooltip__text {
@@ -15,7 +10,6 @@
 .tooltip__icon {
     cursor: pointer;
     display: inline-block;
-    height: 24px;
 }
 
 
