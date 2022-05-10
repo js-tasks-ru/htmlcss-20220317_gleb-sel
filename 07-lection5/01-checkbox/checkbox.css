@@ -21,7 +21,7 @@
 
     box-sizing: border-box;
     background: var(--white);
-    border: 1px solid #DDE2E5;
+    border: 1px solid var(--grey-2);
     border-radius: 4px;
 
     height: 28px;
@@ -48,16 +48,16 @@
 
 
 .checkbox__input:checked~.checkbox__state .checkbox__control {
-    background: #4263EB;
-    border-color: #4263EB;
+    background: var(--blue-3);
+    border-color: var(--blue-3);
 }
 
 .checkbox__input:disabled~.checkbox__state .checkbox__control {
-    background: #DDE2E5;
+    background: var(--grey-2);
 }
 
 .checkbox__input:disabled~.checkbox__state .checkbox__title {
-    color: #DDE2E5;
+    color: var(--grey-2);
 }
 
 .checkbox__input:checked~.checkbox__state .checkbox__icon {
