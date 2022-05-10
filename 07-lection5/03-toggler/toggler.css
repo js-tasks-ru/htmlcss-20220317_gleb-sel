@@ -1,0 +1,67 @@
+.toggle {
+    display: inline-flex;
+    position: relative;
+}
+
+.toggle__input {
+    position: absolute;
+    outline: none;
+    clip: rect(0, 0, 0, 0);
+}
+
+.toggle__state {
+    display: flex;
+    gap: 12px;
+    position: absolute;
+    align-items: center;
+}
+
+.toggle__control {
+    box-sizing: border-box;
+    width: 52px;
+    height: 28px;
+    border: 1px solid  var(--grey-2);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    padding: 0 2px;
+}
+
+.toggle__icon {
+    fill: var(--grey-2);
+}
+
+.toggle__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+}
+
+
+.toggle__input:checked ~ .toggle__state .toggle__control {
+    background: var(--blue-3);
+}
+
+.toggle__input:checked ~ .toggle__state .toggle__icon {
+    animation: toggle-control .2s linear;
+    animation-fill-mode: forwards;
+    fill: var(--white);
+    border: none;
+}
+
+@keyframes toggle-control {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(50%, 0);
+    }
+
+    100% {
+        transform: translate(90%, 0);
+    }
+}

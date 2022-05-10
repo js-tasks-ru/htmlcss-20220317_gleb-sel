@@ -2,10 +2,22 @@
 <!-- Страница с кнопкой переключения -->
 <html lang="ru">
     <head>
+        <link rel="stylesheet" href="../../assets/css/normalize.css">
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./toggler.css">
     </head>
     <body>
-
+        <label class="toggle">
+            <input type="checkbox" class="toggle__input">
+            <div class="toggle__state">
+                <div class="toggle__control">
+                    <svg  class="toggle__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="24" height="24" rx="12" fill=""/>
+                        </svg>
+                        
+                </div>
+                <div class="toggle__title">Off</div>
+            </div>
+        </label>
     </body>
 </html>
