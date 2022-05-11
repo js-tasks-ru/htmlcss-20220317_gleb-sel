@@ -1,6 +1,7 @@
 @import '../fonts/fonts.css';
 @import '/pages/template/template.css';
 @import '/pages/template/aside/aside.css';
+@import '/pages/template/main/main.css';
 
 :root {
     --white: #ffffff;
