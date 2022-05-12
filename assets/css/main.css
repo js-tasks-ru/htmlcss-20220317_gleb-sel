@@ -1,4 +1,8 @@
-@import '../fonts/fonts.css';
+@import '/assets/fonts/fonts.css';
+@import '/components/container/container.css';
+@import '/components/header/header.css';
+@import '/components/preview/preview.css';
+@import '/components/footer/footer.css';
 
 :root {
     --white: #ffffff;
@@ -29,4 +33,8 @@
     --alternate-color: #495057;
     --opacity-prim-second: 0.5; 
     --coursor-pointer: pointer; 
+}
+
+body {
+    width: 100%;
 }
