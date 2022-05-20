@@ -19,7 +19,7 @@
     box-sizing: border-box;
     height: 367px;
     /* заполнить пустосту */
-    width: calc((100 / 3) * 1% - 30px);
+    flex-basis: calc((100 / 3) * 1% - 30px);
 
     background: var(--white);
     box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
