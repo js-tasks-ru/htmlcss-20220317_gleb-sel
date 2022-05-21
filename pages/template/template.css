@@ -16,32 +16,22 @@
     /* display: grid; */
 }
 
-.container {
-    max-width: 1110px;
+.page__container {
     display: grid;
     grid-template-columns: 229px 1fr;
     gap: 56px;
     padding-bottom: 92px;
-    margin: 0 auto;
 }
 
 
-.main {
-    height: 746px;
-}
-
-.footer {
+.page__footer {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
     padding-bottom: 56px;
+    padding-top: 0;
 }
 
-.footer__title {
+.page__footer__title {
 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0.04em;
