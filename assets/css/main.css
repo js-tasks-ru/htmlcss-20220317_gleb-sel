@@ -1,8 +1,12 @@
-@import '/assets/fonts/fonts.css';
+@import '../fonts/fonts.css';
 @import '/components/container/container.css';
+@import '/components/page/page.css';
 @import '/components/header/header.css';
 @import '/components/preview/preview.css';
 @import '/components/footer/footer.css';
+@import '/03-lection1/01-button/button.css';
+
+
 
 
 :root {
@@ -41,6 +45,14 @@
     --coursor-pointer: pointer; 
 }
 
-body {
+/* font-family: 'Inter', sans-serif; */
+
+
+.body {
     width: 100%;
 }
+
+h1, h2 {
+    margin: 0;
+}
+
