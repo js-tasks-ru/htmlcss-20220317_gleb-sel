@@ -1,4 +1,18 @@
-@import '../fonts/fonts.css';
+@import '/assets/fonts/fonts.css';
+
+@import '/components/container/container.css';
+@import '/components/page/page.css';
+@import '/components/header/header.css';
+@import '/components/preview/preview.css';
+@import '/components/footer/footer.css';
+@import '/03-lection1/01-button/button.css';
+
+@import '/pages/template/template.css';
+@import '/pages/template/aside/aside.css';
+@import '/pages/template/main/main.css';
+
+
+
 
 :root {
     --white: #ffffff;
@@ -33,3 +47,15 @@
     --opacity-prim-second: 0.5; 
     --coursor-pointer: pointer; 
 }
+
+/* font-family: 'Inter', sans-serif; */
+
+
+.body {
+    width: 100%;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
