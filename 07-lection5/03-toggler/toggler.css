@@ -9,6 +9,19 @@
     clip: rect(0, 0, 0, 0);
 }
 
+.toggle__input:disabled ~ .toggle__state .toggle__control{
+    background: var(--grey-2);
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__control .toggle__icon {
+    fill: var(--grey-3);
+    opacity: 0.25;
+}
+
+.toggle__input:disabled ~ .toggle__state .toggle__title::after {
+    content: 'Default';
+}
+
 .toggle__state {
     display: flex;
     gap: 12px;
@@ -25,10 +38,13 @@
     display: flex;
     align-items: center;
     padding: 0 2px;
+    transition: background-color 0.2s linear;
+    cursor: pointer;
 }
 
 .toggle__icon {
     fill: var(--grey-2);
+    transition: transform 0.2s linear;
 }
 
 .toggle__title {
@@ -46,22 +62,23 @@
 }
 
 .toggle__input:checked ~ .toggle__state .toggle__icon {
-    animation: toggle-control .2s linear;
-    animation-fill-mode: forwards;
+    transform: translateX(90%);
     fill: var(--white);
     border: none;
 }
 
-@keyframes toggle-control {
-    0% {
-        transform: translate(0, 0);
-    }
 
-    50% {
-        transform: translate(50%, 0);
-    }
-
-    100% {
-        transform: translate(90%, 0);
-    }
+.toggle__input:checked ~ .toggle__state .toggle__title::after {
+    content: 'On';
 }
+
+.toggle__input:not(:checked) ~ .toggle__state .toggle__title::after {
+    content: 'Off';
+}
+
+.toggle__input:focus ~ .toggle__state .toggle__title {
+    text-decoration: underline;
+}
+
+
+
