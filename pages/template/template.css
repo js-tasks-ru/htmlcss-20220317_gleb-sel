@@ -1,0 +1,41 @@
+
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.page__header {
+    height: 82px;
+}
+
+.page__main {
+    padding-top: 36px;
+    background: #F9FAFC;
+
+    /* display: grid; */
+}
+
+.page__container {
+    display: grid;
+    grid-template-columns: 229px 1fr;
+    gap: 56px;
+    padding-bottom: 92px;
+}
+
+
+.page__footer {
+    display: flex;
+    padding-bottom: 56px;
+    padding-top: 0;
+}
+
+.page__footer-title {
+
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--grey-3)
+}
