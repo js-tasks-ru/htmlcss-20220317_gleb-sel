@@ -6,8 +6,8 @@
 .preview__cards {
     display: flex;
     flex-flow: row wrap;
-    gap: 1rem;
     width: 100%;
+    gap: 1rem;
 }
 
 .preview__card {
@@ -20,7 +20,8 @@
     padding-bottom: 0.625rem;
     height: 10.25rem;
     /* заполнить пустосту */
-    flex-basis: calc((100 / 2) * 1% - 1rem);
+    flex-basis: calc(10.25rem - 1rem);
+    flex-grow: 1;
 
     box-shadow: 0px 0.125rem 0.25rem rgba(33, 36, 41, 0.05);
     border-radius: 0.5rem;
@@ -62,7 +63,8 @@
         padding-bottom: 1.875rem;
         height: 22.9375rem;
         /* заполнить пустосту */
-        flex-basis: calc((100 / 3) * 1% - 1.875rem);
+        flex-basis: calc(21.875rem - 1.875rem);
+        flex-grow: 1;
         border-radius: 0.75rem;
     
         font-family: 'Roboto';
