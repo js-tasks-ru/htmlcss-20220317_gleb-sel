@@ -1,19 +1,53 @@
+
 .header {
     text-align: left;
     flex-grow: 0;
+    padding-top: 6rem;
+}
 
-    padding-top: 96px;
+
+.header__icons {
+    position: absolute;
+    top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header__icon {
+    width: 2rem;
+    height: 2rem;
+    display: inline-flex;
 }
 
 .header__title {
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 2.375rem;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 50px;
-line-height: 64px;
-
-color: var(--black)
+    color: var(--black)
+}
 
 
+
+
+@media screen and (min-width: 376px) {
+
+
+    .header__icons {
+        display: none;
+    }
+
+    .header__title {
+
+        font-weight: 500;
+        font-size: 3.125rem;
+        line-height: 4rem;
+
+        color: var(--black)
+    }
 }
