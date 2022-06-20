@@ -3,6 +3,10 @@
     padding-top: 4.3125rem;   
 }
 
+.preview__aside {
+    display: none;
+}
+
 .preview__cards {
     display: flex;
     flex-flow: row wrap;
@@ -53,6 +57,7 @@
     .preview {
         padding-bottom: 204px;
     }
+
     
     .preview__cards {
         gap: 1.875rem;

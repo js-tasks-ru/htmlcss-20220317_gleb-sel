@@ -6,13 +6,21 @@
 @import '/components/preview/preview.css';
 @import '/components/footer/footer.css';
 @import '/03-lection1/01-button/button.css';
+@import '/09-lection7/01-burger-menu/burger-menu.css';
 
 @import '/pages/template/template.css';
 @import '/pages/template/aside/aside.css';
 @import '/pages/template/main/main.css';
 
 
-
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+  }
+  /* прервать запуск transition при загрузке страницы */
+  /* https://css-tricks.com/transitions-only-after-page-load/ */
 
 :root {
     --white: #ffffff;
