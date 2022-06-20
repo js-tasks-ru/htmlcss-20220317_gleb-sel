@@ -7,26 +7,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <script defer src="/09-lection7/01-burger-menu/burger-menu.js"></script>
 </head>
 
-<body>
+<body class="preload">
     <div class="page">
         <header class="header">
             <div class="container">
+                <div class="header__button">
+                    <button id="burger-menu-open" class="burger-menu__button_open burger-menu__button header__menu-button">
+                        <svg class="burger-menu__icon" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12H21" stroke="#495057" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M3 6H21" stroke="#495057" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M3 18H21" stroke="#495057" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button id="burger-menu-close"
+                        class="burger-menu__button burger-menu__button_close burger-menu__button_hidden header__menu-button">
+                        <svg class="burger-menu__icon burger-menu__icon_close" width="24" height="24" viewBox="0 0 24 24"
+                            fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18" stroke="#212429" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M6 6L18 18" stroke="#212429" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
                 <div class="header__icons">
                     <svg class="header__icon">
                         <use href="/assets/sprite.svg#square"></use>
                     </svg>
                     <svg class="header__icon">
-                        <svg class="header__icon">
-                            <use href="/assets/sprite.svg#circle"></use>
-                        </svg>
+                        <use href="/assets/sprite.svg#circle"></use>
                     </svg>
-                    <svg class="header__icon">
-                        <svg class="header__icon">
-                            <use href="/assets/sprite.svg#triangle"></use>
-                        </svg>
+                    <svg class="header__icon" width="32" height="32" viewBox="0 0 32 32"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0L32 32H0V0Z" fill="currentColor" />
                     </svg>
+                </div>
+                <div class="header__page aside__burger-menu header__aside" id="burger-menu">
+                    <div class="aside__menu">
+                        <h4 class="aside__title">Components</h4>
+                        <nav class="aside__nav">
+                            <ul class="aside__nav-ul">
+                                <li class="aside__link aside__link_theme_false"><a class="aside__href"
+                                        href="#">Modal</a>
+                                </li>
+                                <li class="aside__link aside__link_theme_false"><a class="aside__href"
+                                        href="#">Tooltip</a></li>
+                                <li class="aside__link aside__link_theme_false aside__link_active-true"><a
+                                        class="aside__href aside__link_active-true" href="">Avatar</a></li>
+                                <li class="aside__link aside__link_theme_false"><a class="aside__href"
+                                        href="#">Calendar</a></li>
+                                <li class="aside__link aside__link_theme_false"><a class="aside__href"
+                                        href="#">Histogram</a></li>
+                                <li class="aside__link aside__link_theme_false"><a class="aside__href" href="#">Custom
+                                        form elements</a>
+                                </li>
+                                <li class="aside__link aside__link_theme_false"><a class="aside__href" href="#">Main
+                                        page</a></li>
+                            </ul>
+                            <nav />
+                    </div>
                 </div>
                 <h1 class="header__title ">
                     Reusable component library

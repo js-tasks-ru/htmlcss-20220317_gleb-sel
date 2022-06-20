@@ -5,6 +5,24 @@
     padding-top: 6rem;
 }
 
+.header__aside {
+    position: fixed;
+    top: 4rem;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    margin-left: 1rem;
+    transform: translateX(-100%);
+    transition: transform 200ms linear;
+    background-color: var(--white);
+}
+
+.header__menu-button {
+    position: absolute;
+    left: 0.75rem;
+    top: 1.25rem;
+}
+
 
 .header__icons {
     position: absolute;
@@ -18,8 +36,11 @@
 .header__icon {
     width: 2rem;
     height: 2rem;
+    color: var(--black);
     display: inline-flex;
 }
+
+
 
 .header__title {
     
@@ -37,8 +58,15 @@
 
 @media screen and (min-width: 376px) {
 
+    .header__button {
+        display: none;
+    }
 
     .header__icons {
+        display: none;
+    }
+
+    .header__aside {
         display: none;
     }
 

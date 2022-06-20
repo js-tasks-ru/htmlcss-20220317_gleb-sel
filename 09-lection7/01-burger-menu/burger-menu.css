@@ -1,0 +1,58 @@
+/* српятать */
+.burger-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition:  transform 200ms linear;
+    background: rgba(127, 127, 127, 0.5);
+}
+
+.burger-menu__button {
+    outline: none;
+    border: none; 
+    width: 24px;
+    height: 24px;
+    display: inline;
+    background-color: var(--white);
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.burger__button_open {
+    transition: opacity 200ms linear;
+    opacity: 1;
+   
+}
+
+
+.burger-menu__button_close {
+    /* background: transparent; */
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    background-color: var(--grey-2);
+    width: 32px;
+    height: 32px;
+}
+
+
+
+.burger-menu__icon {
+    color: var(--black);
+}
+
+
+
+.burger-menu__button_hidden {
+    display: none;
+}
+
+
+
+
+
